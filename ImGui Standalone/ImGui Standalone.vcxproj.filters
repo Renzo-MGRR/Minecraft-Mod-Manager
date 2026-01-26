@@ -89,12 +89,6 @@
     <ClInclude Include="IniReader.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="KeyBind.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyBinds.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="json\json.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
