@@ -1,9 +1,10 @@
+# An open source C++ Minecraft Mod Manager
 This is an attempt to create a good open source Minecraft Mod Manager in C++ with the ImGui Standalone template by adamhlt. It mostly uses basic C++ libraries and the Windows API besides ImGui. Also uses libcurl to download stuff and bit7z to extract/list files (Use vcpkg to install libcurl).
 Supports modded servers with UI implementation for them.
 This mod manager makes all modded Minecraft profiles have their own directory for optimization and better organization.
 The official Minecraft Launcher is strongly recommended to ensure proper functioning of this program. (launcher_profiles.json must be present in .minecraft)
 
-Full list of features:
+## Full list of features:
 - Installing CurseForge and Modrinth Modpacks, automatically downloading its files.
 - Automatic download of latest Fabric Installer
 - Multiple modded profiles
@@ -16,7 +17,7 @@ Full list of features:
 - Removing and renaming profiles and servers
 - Managing server options
 - And more...
-To Do:
+### To Do:
 - Optimize the code (it's a mess)
 - Check mod and modpack compatibility with current Minecraft version
 - Bug and unintended behavior fixes
@@ -24,7 +25,7 @@ To Do:
 - More testing
 - And more...
 
-Where are my saves/screenshots/resourcepacks/mods/shaders???
+# Where are my saves/screenshots/resourcepacks/mods/shaders???
 - They're still on "%appdata%\.minecraft". What happens is that this program creates a separate folder for each profile, and the game then only reads from that folder. You can copy manually from that folder, I will later add an option to copy them from the program.
 
 I'm really looking for help. If you wanna help on this project, contact me at Discord: ryxden
