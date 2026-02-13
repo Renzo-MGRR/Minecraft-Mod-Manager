@@ -7,11 +7,10 @@ Full list of features:
 - Installing CurseForge and Modrinth Modpacks, automatically downloading its files.
 - Automatic download of latest Fabric Installer
 - Multiple modded profiles
-- Adding multiple mods at the same time, as folder or per file
+- Adding multiple mods or resource packs at the same time, as folder or per file
 - Reloading profiles and servers with a button, rather than restarting the program
-- Opening the Modrinth mod page (buggy cause of Modrinth page, not a fault of this program) and the CurseForge mod page of the current mod loader and version.
-- Enabling and disabling mods
-- Removing mods
+- Opening the Modrinth mod page (buggy cause of Modrinth page, not a fault of this program) and the CurseForge mod page of the current mod loader and version
+- Enabling and disabling and removing mods and resource packs
 - Auto-identifying mod and resource pack titles
 - Installing modded servers and accepting the EULA automatically
 - Removing and renaming profiles and servers
