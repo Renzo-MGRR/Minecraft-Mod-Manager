@@ -28,4 +28,5 @@ The official Minecraft Launcher is strongly recommended to ensure proper functio
 # Where are my saves/screenshots/resourcepacks/mods/shaders???
 - They're still on "%appdata%\.minecraft". What happens is that this program creates a separate folder for each profile, and the game then only reads from that folder. You can copy manually from that folder, I will later add an option to copy them from the program.
 
-I'm really looking for help. If you wanna help on this project, contact me at Discord: ryxden
+# HELP!
+I'm really looking for help to keep developing this. If you wanna help on this project, contact me at Discord: ryxden
