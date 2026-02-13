@@ -26,7 +26,17 @@ The official Minecraft Launcher is strongly recommended to ensure proper functio
 - And more...
 
 # Where are my saves/screenshots/resourcepacks/mods/shaders???
-- They're still on "%appdata%\\.minecraft". What happens is that this program creates a separate folder for each profile, and the game then only reads from that folder. You can copy manually from that folder, I will later add an option to copy them from the program.
+- They're still on "%appdata%\\.minecraft". What happens is that this program creates a separate folder for each profile, and the game then only reads from that folder. You can copy manually from that folder to %appdata%\\.minecraft\\profiles, I will later add an option to copy them from the program.
+
+## Additional notes:
+- I know better alternatives exists like MultiMC, but I just like having my mod manager being separated from the official Minecraft Launcher.
+- You can also send me suggestions.
 
 # HELP!
 I'm really looking for help to keep developing this. If you wanna help on this project, contact me at Discord: ryxden
+
+# How to install
+Simply download the latest zip from Releases page and extract it. There you will find the mod manager.
+# How to Build
+Download DirectX SDK, Visual Studio (I use 2022 Enterprise personally), and in there, install C++ enviroment with vcpkg.
+Set project to Release x86, then you can compile from Visual Studio.
