@@ -819,7 +819,6 @@ void Drawing::Draw() {
                     ModVersions.push_back(Version);
                     ModListAndEnabled.push_back(make_pair(DisabledModList[i], false));
             }
-            std::sort(ModDisplayListAndEnabled.begin(), ModDisplayListAndEnabled.end());
             ResourcePackList = getInDirectoryW(utf8_to_wstring(ResourcePackDir), false);
             std::vector<bit7z::byte_t> ResourcePackBuffer;
             for (int i = 0; i < ResourcePackList.size(); i++)
@@ -897,7 +896,6 @@ void Drawing::Draw() {
                     ResourcePackListAndEnabled.push_back(make_pair(DisabledResourcePackList[i], false));
                 }
             }
-            std::sort(ResourcePackDisplayListAndEnabled.begin(), ResourcePackDisplayListAndEnabled.end());
             ShaderList = getInDirectoryW(utf8_to_wstring(ShaderDir), false);
             for (int i = 0; i < ShaderList.size(); i++)
             {
@@ -914,7 +912,6 @@ void Drawing::Draw() {
                     ShaderListAndEnabled.push_back(make_pair(DisabledShaderList[i], false));
                 }
             }
-            std::sort(ShaderListAndEnabled.begin(), ShaderListAndEnabled.end());
             /*ConfigList = getInDirectoryW(utf8_to_wstring(ConfigDir), false);
             for (int i = 0; i < ConfigList.size(); i++)
             {
@@ -924,8 +921,7 @@ void Drawing::Draw() {
             for (int i = 0; i < DisabledConfigList.size(); i++)
             {
                 ConfigListAndEnabled.push_back(make_pair(DisabledConfigList[i], false));
-            }
-            std::sort(ConfigListAndEnabled.begin(), ConfigListAndEnabled.end());*/
+            } */
         }
         else
         {
@@ -1139,7 +1135,6 @@ void Drawing::Draw() {
                 ServerModVersions.push_back(Version);
                 ServerModListAndEnabled.push_back(make_pair(DisabledModList[i], false));
             }
-            std::sort(ServerDisplayModListAndEnabled.begin(), ServerDisplayModListAndEnabled.end());
             ServerResourcePackList = getInDirectoryW(utf8_to_wstring(ServerResourcePackDir), false);
             std::vector<bit7z::byte_t> ResourcePackBuffer;
             for (int i = 0; i < ServerResourcePackList.size(); i++)
@@ -1217,7 +1212,6 @@ void Drawing::Draw() {
                     ServerResourcePackListAndEnabled.push_back(make_pair(DisabledResourcePackList[i], false));
                 }
             }
-            std::sort(ServerDisplayResourcePackListAndEnabled.begin(), ServerDisplayResourcePackListAndEnabled.end());
         }
         ServerInit = false;
     }
@@ -2639,7 +2633,6 @@ void Drawing::Draw() {
                                 ModVersions.push_back(Version);
                                 ModListAndEnabled.push_back(make_pair(DisabledModList[i], false));
                             }
-                            std::sort(ModDisplayListAndEnabled.begin(), ModDisplayListAndEnabled.end());
                             UpdateModsList = false;
                         }
                         if (ImGui::CollapsingHeader("Resource Packs"))
@@ -2957,7 +2950,6 @@ void Drawing::Draw() {
                                     ResourcePackListAndEnabled.push_back(make_pair(DisabledResourcePackList[i], false));
                                 }
                             }
-                            std::sort(ResourcePackDisplayListAndEnabled.begin(), ResourcePackDisplayListAndEnabled.end());
                             UpdateResourcePackList = false;
                         }
                         if (ImGui::CollapsingHeader("Shaders"))
@@ -3220,7 +3212,6 @@ void Drawing::Draw() {
                                     ShaderListAndEnabled.push_back(make_pair(DisabledShaderList[i], false));
                                 }
                             }
-                            std::sort(ShaderListAndEnabled.begin(), ShaderListAndEnabled.end());
                             UpdateShaderList = false;
                         }
                         if (ImGui::CollapsingHeader("Config"))
@@ -5472,7 +5463,6 @@ void Drawing::Draw() {
                                     ServerModVersions.push_back(Version);
                                     ServerModListAndEnabled.push_back(make_pair(DisabledModList[i], false));
                                 }
-                                std::sort(ServerDisplayModListAndEnabled.begin(), ServerDisplayModListAndEnabled.end());
                             }
                             UpdateServerModsList = false;
                         }
@@ -5561,7 +5551,6 @@ void Drawing::Draw() {
                                         ServerResourcePackListAndEnabled.push_back(make_pair(DisabledResourcePackList[i], false));
                                     }
                                 }
-                                std::sort(ServerDisplayResourcePackListAndEnabled.begin(), ServerDisplayResourcePackListAndEnabled.end());
                             }
                             UpdateServerResourcePackList = false;
                         }
