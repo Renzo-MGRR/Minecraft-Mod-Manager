@@ -2514,6 +2514,9 @@ void Drawing::Draw() {
                         }
                         if (UpdateModsList)
                         {
+                            ModAuthors.clear();
+                            ModDescriptions.clear();
+                            ModVersions.clear();
                             ModList.clear();
                             ModListAndEnabled.clear();
                             ModDisplayList.clear();
@@ -5345,6 +5348,7 @@ void Drawing::Draw() {
                         {
                             if (!ServerList.empty())
                             {
+                                ServerModListAndEnabled.clear();
                                 ServerDisplayModListAndEnabled.clear();
                                 ServerModAuthors.clear();
                                 ServerModDescriptions.clear();
